@@ -1,5 +1,4 @@
-const API_URL = "http://localhost:5000/api/readme/generate";
-
+const API_URL = "https://gemini-readme-generator.onrender.com/api/readme/generate";
 export const generateReadme = async (projectData) => {
   const response = await fetch(API_URL, {
     method: "POST",
