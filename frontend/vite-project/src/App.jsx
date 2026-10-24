@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 function App() {
-  const [projectName, setProjectName] = useState("");
+  const [ProjectName, setProjectName] = useState("");
   const [description, setDescription] = useState("");
   const [features, setFeatures] = useState("");
   const [technologies, setTechnologies] = useState("");
@@ -97,7 +97,7 @@ function App() {
                   Project name
                 </label>
                 <input
-                  value={projectName}
+                  value={ProjectName}
                   onChange={(e) => setProjectName(e.target.value)}
                   placeholder="e.g. TaskFlow"
                   className="w-full rounded-xl border border-white/[0.09] bg-[#0b1020]/80 px-4 py-3.5 text-sm text-white outline-none transition placeholder:text-slate-600 hover:border-violet-400/30 focus:border-violet-400/60 focus:bg-[#0c1225] focus:ring-4 focus:ring-violet-500/10"
