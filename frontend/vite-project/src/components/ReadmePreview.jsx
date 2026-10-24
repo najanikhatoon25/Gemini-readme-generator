@@ -19,7 +19,7 @@ function ReadmePreview({ readme }) {
       </div>
 
       {/* Preview Content */}
-      <div className="min-h-[560px] p-5 sm:p-7">
+      <div className="h-[560px] overflow-y-auto p-5 sm:p-7">
         {readme ? (
           <pre className="whitespace-pre-wrap break-words font-mono text-sm leading-7 text-slate-300">
             {readme}

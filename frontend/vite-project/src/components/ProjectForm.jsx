@@ -2,7 +2,7 @@ function ProjectForm({
     ProjectName,
     setProjectName,
     description,
-    setdescription,
+    setDescription,
     features,
     setFeatures,
     technologies,
@@ -43,7 +43,7 @@ function ProjectForm({
         <lable className="mb-2 block text-sm font-medium text-slate-300">Project Description</lable>
         <textarea
         value={description}
-        onChange={(e) => setdescription(e.target.value)}
+        onChange={(e) => setDescription(e.target.value)}
         placeholder="What does your project do?"
         rows={4}
         required

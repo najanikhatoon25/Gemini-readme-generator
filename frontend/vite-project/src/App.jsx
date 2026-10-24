@@ -1,11 +1,11 @@
 
 import { useState } from "react";
 
-import Navbar from "./components/Navbar";
-import ProjectForm from "./components/ProjectForm";
-import Loading from "./components/Loading";
-import ReadmePreview from "./components/ReadmePreview";
-import { generateReadme } from "./services/readmeService";
+import Navbar from "./components/Navbar.jsx";
+import ProjectForm from "./components/ProjectForm.jsx";
+import Loading from "./components/Loading.jsx";
+import ReadmePreview from "./components/ReadmePreview.jsx";
+import { generateReadme } from "./services/readmeServices.js";
 
 function App() {
   // Store form input
