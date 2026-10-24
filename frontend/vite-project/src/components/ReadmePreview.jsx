@@ -1,4 +1,4 @@
-
+import ReactMarkdown from "react-markdown";
 function ReadmePreview({ readme }) {
   return (
     <section className="overflow-hidden rounded-3xl border border-white/[0.09] bg-gradient-to-br from-[#151a30]/95 to-[#0f1529]/95 shadow-2xl shadow-black/20 backdrop-blur-2xl">
@@ -20,11 +20,14 @@ function ReadmePreview({ readme }) {
 
       {/* Preview Content */}
       <div className="h-[560px] overflow-y-auto p-5 sm:p-7">
-        {readme ? (
-          <pre className="whitespace-pre-wrap break-words font-mono text-sm leading-7 text-slate-300">
-            {readme}
-          </pre>
-        ) : (
+        
+{readme ? (
+  <div className="break-words text-sm leading-7 text-slate-300 [&_h1]:mb-4 [&_h1]:text-3xl [&_h1]:font-bold [&_h1]:text-white [&_h2]:mb-3 [&_h2]:mt-6 [&_h2]:text-2xl [&_h2]:font-semibold [&_h2]:text-white [&_h3]:mb-2 [&_h3]:mt-4 [&_h3]:text-xl [&_h3]:font-semibold [&_ul]:my-3 [&_ul]:list-disc [&_ul]:pl-6 [&_ol]:my-3 [&_ol]:list-decimal [&_ol]:pl-6 [&_li]:my-1 [&_p]:my-3 [&_a]:text-blue-400 [&_a]:underline [&_code]:rounded [&_code]:bg-white/10 [&_code]:px-1 [&_pre]:overflow-x-auto [&_pre]:rounded-lg [&_pre]:bg-black/30 [&_pre]:p-4">
+    <ReactMarkdown>{readme}</ReactMarkdown>
+  </div>
+) : (
+  
+
           <div className="flex min-h-[500px] flex-col items-center justify-center rounded-2xl border border-dashed border-violet-400/20 bg-gradient-to-br from-violet-500/[0.06] via-[#11172b]/60 to-blue-500/[0.06] px-6 py-12 text-center">
             <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-2xl border border-violet-400/20 bg-violet-400/10">
               <span className="text-3xl text-violet-300">{"</>"}</span>

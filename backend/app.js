@@ -11,9 +11,9 @@ app.use(cors({
 
 app.use(express.json());
 
-app.get("/api/readme/test", (req, res) => {
-  res.send("Backend is working!");
-});
+// app.get("/api/readme/test", (req, res) => {
+//   res.send("Backend is working!");
+// });
 app.use("/api/readme", readmeRoutes);
 
 export default app;
